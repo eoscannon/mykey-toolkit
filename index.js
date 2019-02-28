@@ -9,7 +9,7 @@ class mykeyTool {
    * get getAdminKey of the chain connected
    * @return {Promise<*>}
    */
-  getAdmin(code ,scope , table, url ) {
+  getAdminKey(code ,scope , table, url ) {
     return getAdminKey(code ,scope , table, url )
   }
 
