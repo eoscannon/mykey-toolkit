@@ -1,7 +1,7 @@
 const {  JsonRpc } = require('eosjs') ;
 const fetch = require('node-fetch'); 
 const Url = require('../config');
-function getRawTransaction(url , id , block_num){
+function getRawTransaction(id , block_num ,url ){
   const rpc = new JsonRpc(url || baseUrl , { fetch })
   rpc.history_get_transaction(id ,block_num)
   .then(result => {

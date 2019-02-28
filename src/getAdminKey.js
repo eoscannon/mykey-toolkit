@@ -2,8 +2,7 @@ const {  JsonRpc } = require('eosjs') ;
 const fetch = require('node-fetch');                            // node only; not needed in browsers
 
 const Url = require('../config');
-
-function getAdminKey(url ,code ,scope , table  ){
+function getAdminKey(code ,scope , table ,url  ){
 
   const rpc = new JsonRpc(url || baseUrl , { fetch });
     rpc.get_table_rows({
